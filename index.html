@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasmine</title>
+    <title>Yuna Yonder</title>
     <link rel="stylesheet" href="styles.css">
+    
     <style>
         /* General styles */
         body, html {
@@ -16,17 +18,21 @@
             background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the whole website */
         }
 
-        /* Video background */
-        .video-background {
-            position: fixed;
+        /* Background image */
+        .background-image {
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            z-index: -1;
+            background-image: url('Jasmine.jpg');
+            background-size: cover; /* Scale the image to cover the entire background */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            background-position: center center; /* Center the image */
+            z-index: -2;
         }
 
+        /* Overlay styles */
         .text-overlay {
             position: absolute;
             top: 0;
@@ -242,21 +248,18 @@
     </style>
 </head>
 <body>
-    <video class="video-background" autoplay loop muted>
-        <source src="0903.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="background-image"></div>
     <div class="text-overlay">
         <div class="circle-container">
             <div class="circle-image">
-                <img src="rendernet_image%20(20).jpg" alt="Circle Image">
+                <img src="rendernet_image%20(21).jpg" alt="Circle Image">
             </div>
-            <div class="circle-text">Baby Jass🍎</div>
+            <div class="circle-text">❤️Jasmine❤️</div>
             <div class="status-container">
                 <div class="status-dot"></div>
                 <div class="status-text">Online</div>
             </div>
-            <div class="additional-text">Hi, I'm Jasmine and I'm currently visiting</div>
+            <div class="additional-text">Hi, I'm Lexxie and I'm currently visiting</div>
         </div>
         <!-- New section for geolocation, countdown, and date -->
         <div class="unique-info">
@@ -270,7 +273,7 @@
                         <span class="button-text">Only Friends VIP</span>
                     </a>
                     <a href="https://onlyfans.com/jasminebabegirl/c103" class="transparent-button">
-                        Click here for some hot stuffs :>
+                        Let's get wild here🌶️🌶️
                     </a>
                 </div>
             </div>
@@ -341,7 +344,7 @@
 
             // Display current date
             const now = new Date();
-            const dateStr = `70% off until today, ${now.toDateString()}`;
+            const dateStr = `Promo runs until: ${now.toDateString()}`;
             document.getElementById('date').textContent = dateStr;
         };
     </script>
